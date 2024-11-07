@@ -5,7 +5,8 @@ Get Microsoft 365 Quick Evaluation Action is part of App Compliance Automation T
 New to ACAT? Its an Azure service that help you to get M365 compliance certificate easily. To know more check out: [What is App Compliance Automation Tool(ACAT)](https://learn.microsoft.com/en-us/microsoft-365-app-certification/docs/acat-overview)
 
 The definition of this Github Action is in [action.yml]()
-
+> [!NOTE]
+> ACAT GitHub Actions support is preview and only supports apps built on Microsoft Azure. Future updates will include functionality for apps built on other clouds.
 
 # Pre-requisites:
 * Azure Login Action: Authenticate using [Azure Login](https://github.com/Azure/login)  action. The get Microsoft 365 quick evaluation action assumes that Azure Login is done using an Azure service principal that has [sufficient permissions](https://github.com/Azure/microsoft-365-certification-quick-evaluation#configure-credentials-for-azure-login-action) trigger and get quick evaluation on the selected scopes. Once login is done, the next set of actions in the workflow can perform tasks such as geting quick evaluation by report or by deployment. For more details on permissions, checkout 'Configure credentials for Azure login action' section in this page  or alternatively you can refer the full [documentation](https://github.com/Azure/login) of Azure Login Action.
